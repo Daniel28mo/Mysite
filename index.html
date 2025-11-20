@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BA CONTAB S.R.L.</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff7cc;
+        color: #333;
+        font-size: 22px;
+    }
+    h1, h2, h3 { margin: 0 0 20px; }
+    section { padding: 80px 12%; }
+
+    /* HERO */
+    .hero {
+        position: relative;
+        height: 100vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');
+    }
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.55);
+    }
+    .hero-content {
+        position: relative;
+        width: 50%;
+        z-index: 2;
+    }
+    .hero button {
+        margin-top: 20px;
+        padding: 15px 30px;
+        background: #ffd84d;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 8px;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .flex img {
+        width: 50%;
+        border-radius: 10px;
+    }
+    .services, .advantages, .process {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+    }
+    /* Contacts full screen block */
+    .contact-block {
+        height: 100vh;
+        background-color: #ffe680;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 10%;
+    }
+    .contact-block img {
+        width: 45%;
+        border-radius: 15px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 600px;
+        margin-top: 40px;
+    }
+    input, textarea {
+        padding: 18px;
+        font-size: 20px;
+        border-radius: 8px;
+        border: 2px solid #ccac00;
+        background: #fffdfa;
+    }
+    button.submit {
+        padding: 18px;
+        background: #ffcf33;
+        border: none;
+        font-size: 22px;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <h1>BA CONTAB S.R.L.</h1>
+        <h2>Consultanță tehnică și suport IT pentru companii moderne</h2>
+        <p>
+            Oferim soluții tehnologice precise, adaptate la infrastructura și ritmul de lucru al afacerii dvs. 
+            De la optimizarea sistemelor până la intervenții rapide, ne asigurăm că mediul digital funcționează impecabil.
+        </p>
+        <button onclick="document.getElementById('contacte').scrollIntoView({behavior:'smooth'})">Contacte</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="despre">
+    <h2>🔎 Cine suntem noi</h2>
+    <div class="flex">
+        <div>
+            <p>
+                BA CONTAB S.R.L. este o companie specializată în consultanță tehnică și suport IT,
+                dedicată optimizării proceselor digitale pentru întreprinderi din diverse industrii.
+                Analizăm structura tehnologică existentă și construim soluții personalizate, astfel încât
+                performanța sistemelor să fie stabilă și eficientă. Ne remarcăm prin abordarea practică,
+                intervențiile rapide și recomandările clare, bazate pe experiență reală. Obiectivul nostru
+                este să oferim clienților un mediu digital sigur, modern și ușor de administrat.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D" alt="Office">
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="servicii">
+    <h2>💼 Ce putem face pentru afacerea dvs.</h2>
+    <div class="services">
+        <div>
+            <h3>Consultanță tehnică avansată</h3>
+            <p>
+                Analizăm infrastructura IT existentă și oferim recomandări detaliate pentru îmbunătățiri,
+                optimizări și automatizări. Soluțiile noastre sunt adaptate nevoilor reale ale companiei
+                și orientate spre rezultate măsurabile.
+            </p>
+        </div>
+        <div>
+            <h3>Suport IT complet</h3>
+            <p>
+                Asigurăm intervenții rapide, monitorizare constantă și eliminarea problemelor tehnice
+                care pot afecta activitatea zilnică. Prioritatea noastră este funcționarea neîntreruptă
+                a sistemelor dvs.
+            </p>
+        </div>
+        <div>
+            <h3>Managementul securității digitale</h3>
+            <p>
+                Protejăm datele și echipamentele companiei prin soluții de securitate moderne:
+                backup automatizat, protecție antivirus, politici de acces și evaluări ale vulnerabilităților.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section id="avantaje">
+    <h2>⭐ De ce clienții aleg BA CONTAB</h2>
+    <div class="advantages">
+        <div>
+            <h3>Experiență practică reală</h3>
+            <p>
+                Nu oferim soluții teoretice — tot ce implementăm este testat, eficient și aplicabil imediat
+                în mediul de lucru al clientului.
+            </p>
+        </div>
+        <div>
+            <h3>Răspuns rapid și intervenții eficiente</h3>
+            <p>
+                Prioritizăm rezolvarea problemelor fără întârzieri, astfel încât activitatea companiei
+                să rămână stabilă și productivă.
+            </p>
+        </div>
+        <div>
+            <h3>Servicii personalizate</h3>
+            <p>
+                Fiecare proiect este analizat individual, iar soluțiile sunt adaptate la realitatea
+                operațională a companiei, nu preluate din tipare standard.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section id="proces">
+    <h2>🔧 Cum lucrăm – procesul nostru</h2>
+    <div class="process">
+        <div>
+            <h3>1. Analiză tehnică detaliată</h3>
+            <p>
+                Evaluăm infrastructura existentă și identificăm punctele critice care afectează stabilitatea
+                și performanța sistemelor.
+            </p>
+        </div>
+        <div>
+            <h3>2. Propuneri clare și soluții reale</h3>
+            <p>
+                Dezvoltăm un plan tehnic cu explicații simple, costuri transparente și etape clare de implementare.
+            </p>
+        </div>
+        <div>
+            <h3>3. Implementare & suport continuu</h3>
+            <p>
+                Punem în aplicare soluțiile alese și asigurăm mentenanță permanentă pentru a garanta
+                funcționarea optimă a sistemelor.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT BLOCK -->
+<section class="contact-block" id="contacte">
+    <div>
+        <h2>📨 Hai să discutăm!</h2>
+        <p>
+            Ne puteți contacta oricând prin email, iar echipa noastră va reveni rapid cu soluții
+            și răspunsuri personalizate. Suntem aici pentru a vă simplifica infrastructura
+            tehnologică și a vă ajuta să lucrați mai eficient.
+        </p>
+        <p><strong>Email:</strong> contact@bacontab.org</p>
+        <p><strong>Adresă:</strong> Aleea Marasti NR.16A SP. 3, 430011 Baia Mare</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D" alt="Contact">
+</section>
+
+<!-- FORM -->
+<section id="formular">
+    <h2>📝 Trimite-ne un mesaj</h2>
+    <p>Completați formularul de mai jos și vă vom răspunde cât mai curând.</p>
+    <form>
+        <input type="text" placeholder="Nume complet">
+        <input type="email" placeholder="Adresă de email">
+        <textarea rows="6" placeholder="Mesajul dvs."></textarea>
+        <button class="submit">Trimite mesajul</button>
+    </form>
+</section>
+
+</body>
+</html>
